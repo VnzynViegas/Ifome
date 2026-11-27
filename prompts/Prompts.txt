@@ -1,0 +1,12 @@
+Início e configuração do ambiente
+
+
+Explicação sobre o projeto do GitHub Ifome-vinicius-luiz
+
+Resolução do erro de diretório no terminal (Error: Cannot find module '.../Ifome/server.js') ao acessar a subpasta correta (Ifome-vinicius-luiz) e executar node server.js.
+
+Roteiro e validação dos testes de cadastro/login, CRUD, busca, carrinho e fechamento de pedido
+
+resolver erro de cadastro no login 
+
+Crie um código css para estilizar um site de delivery chamado iFome, inspirado na identidade visual do iFood, utilizando principalmente as cores vermelho, preto, branco e cinza claro. O site possui várias telas na mesma página, barra de pesquisa, cards de restaurantes e pratos, formulários de cadastro, carrinho de compras e área de avaliações. Desenvolva um visual moderno, bonito, organizado e responsivo, adaptado para computadores, tablets e celulares. Crie as classes CSS necessárias para estilizar todos esses elementos, incluindo botões, menus, formulários, cards, títulos, textos e demais componentes do site. Utilize efeitos de hover, sombras, bordas arredondadas, transições suaves e uma boa organização visual. O css deve ser completo e estar pronto para ser utilizado no arquivo html do projeto.

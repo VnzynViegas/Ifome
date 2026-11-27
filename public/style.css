@@ -1458,3 +1458,28 @@ textarea:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }   
+
+.card-pedido {
+    background: var(--branco);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+    border: 1px solid #eeeeee;
+    margin-bottom: 15px;
+}
+
+.card-pedido .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-pedido .status {
+    background: #e3f6ec;
+    color: var(--verde);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}

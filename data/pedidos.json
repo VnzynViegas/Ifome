@@ -15,5 +15,22 @@
     "total": 10,
     "status": "Entregue",
     "data": "26/11/2026, 23:33:49"
+  },
+  {
+    "id": 1795789200680,
+    "usuarioId": 1795789131935,
+    "itens": [
+      {
+        "id": 1795789064877,
+        "restauranteId": 1795788592431,
+        "nome": "Pizza Pequena 2 Sabores",
+        "preco": 44.99,
+        "imagem": "https://lh3.googleusercontent.com/grass-cs/AABkmLckyW73ucoyiA_EBFPtJVaWtx1bEgrXulnaYGur-7TQ1k7UNUGBN6tvdPmvl08-qnQMUY8Ur2mmOEszmJA6unkxda-mRtyqPhQoSOKybM6kUMJwIl9P8THTO97H5CeOBfTrnCW4SRNmlDp5=w640-h640-n-k-no",
+        "quantidade": 2
+      }
+    ],
+    "total": 89.98,
+    "status": "Entregue",
+    "data": "27/11/2026, 11:20:00"
   }
 ]

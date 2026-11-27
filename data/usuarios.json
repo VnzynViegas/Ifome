@@ -8,5 +8,13 @@
     "favoritos": [
       1795746009745
     ]
+  },
+  {
+    "id": 1795789131935,
+    "nome": "João Silva",
+    "email": "seuemail@exemplo.com",
+    "senha": "Crie uma senha",
+    "endereco": "Rua, numero e Bairro",
+    "favoritos": []
   }
 ]
