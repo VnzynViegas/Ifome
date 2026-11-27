@@ -131,6 +131,7 @@ function renderizarRestaurantesHome() {
             r.nome.toLowerCase().includes(termo) ||
             r.categoria.toLowerCase().includes(termo) ||
             (r.descricao && r.descricao.toLowerCase().includes(termo));
+
         const bateCategoria = !categoriaSelecionada || r.categoria === categoriaSelecionada;
         return bateNome && bateCategoria;
     });
@@ -404,7 +405,7 @@ async function iniciarPaginaRestaurante() {
         listaPratosEl.innerHTML = `
             <div class="vazio" style="grid-column: 1 / -1;">
                 <h3>Nenhum prato cadastrado neste restaurante</h3>
-                <p>Adicione pratos a este restaurante na tela Gerenciar (CRUD).</p>
+                <p>Adicione pratos a este restaurante na tela Gerenciar Restaurantes.</p>
                 <a href="admin.html" class="btn btn-vermelho">Ir para Gerenciar</a>
             </div>
         `;
@@ -441,10 +442,11 @@ async function iniciarPaginaRestaurante() {
     document.getElementById("form-avaliacao").onsubmit = async (e) => {
         e.preventDefault();
         const usuario = obterUsuarioLogado();
-        if (!usuario) {
-            exibirAlerta("mensagem-pedido", "Faça login para enviar uma avaliação!", "aviso");
-            return;
+        if (carrinho.length > 0 && carrinho.restauranteId !== prato.restauranteId) {
+            if (!confirm("Limpar carrinho do outro restaurante antes de adicionar este prato?")) return;
+            carrinho.length = 0;
         }
+
 
         const nota = Number(document.getElementById("avaliacao-nota").value);
         const comentario = document.getElementById("avaliacao-comentario").value;
