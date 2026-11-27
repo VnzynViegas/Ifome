@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": 1795746651859,
+    "nome": "Vinicius Oliveira",
+    "email": "vini@gmail.com",
+    "senha": "12345678",
+    "endereco": "perto dali",
+    "favoritos": [
+      1795746009745
+    ]
+  }
+]

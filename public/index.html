@@ -3,15 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ifoome</title>
-    
-    <link rel="stylesheet" href="style.css"><link>
-</head> 
+    <title>iFome - Peça sua comida favorita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
-        IFOME
+        <a href="index.html" class="logo">i<span>Fome</span></a>
+
+        <div class="barra-pesquisa">
+            <input type="text" id="input-busca" placeholder="Busque por restaurante ou categoria...">
+            <button type="button" id="btn-busca">Buscar</button>
+        </div>
+
+        <nav id="menu-navegacao">
+            <a href="index.html" class="ativo">Início</a>
+            <a href="admin.html">Gerenciar (CRUD)</a>
+            <a href="login.html" id="link-usuario">Entrar / Cadastrar</a>
+        </nav>
     </header>
-    
+
+    <main class="container conteudo">
+        <section class="banner">
+            <div>
+                <h1>Fome de quê hoje?</h1>
+                <p>Os melhores restaurantes da cidade entregues rapidamente na sua porta.</p>
+                <a href="#secao-restaurantes" class="btn">Ver Restaurantes</a>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="secao-titulo">
+                <h2>Categorias</h2>
+            </div>
+            <div class="filtros" id="filtros-categorias">
+                <button class="filtro ativo" data-categoria="">Todas</button>
+                <button class="filtro" data-categoria="Lanches">Lanches</button>
+                <button class="filtro" data-categoria="Pizza">Pizza</button>
+                <button class="filtro" data-categoria="Brasileira">Brasileira</button>
+                <button class="filtro" data-categoria="Japonesa">Japonesa</button>
+                <button class="filtro" data-categoria="Doces">Doces</button>
+            </div>
+        </section>
+
+        <section class="secao" id="secao-restaurantes">
+            <div class="secao-titulo">
+                <h2>Restaurantes Disponíveis</h2>
+                <span class="texto-cinza" id="contador-restaurantes"></span>
+            </div>
+
+            <div class="lista-restaurantes" id="lista-restaurantes">
+               
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <div>
+                <div class="footer-logo">iFome</div>
+                <p>Seu app de delivery rápido e prático.</p>
+            </div>
+            <div>
+                <h3>Navegação</h3>
+                <a href="index.html">Início</a>
+                <a href="admin.html">Administração</a>
+                <a href="login.html">Minha Conta</a>
+            </div>
+        </div>
+        <div class="footer-direitos">
+            &copy; 2026 iFome - Projeto Web
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>

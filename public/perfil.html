@@ -3,13 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ifoome</title>
-    
-    <link rel="stylesheet" href="style.css"><link>
-</head> 
+    <title>iFome - Meu Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+    <header>
+        <a href="index.html" class="logo">i<span>Fome</span></a>
+        <nav id="menu-navegacao">
+            <a href="index.html">Início</a>
+            <a href="admin.html">Gerenciar (CRUD)</a>
+            <a href="perfil.html" class="ativo">Perfil</a>
+            <a href="login.html" id="link-usuario">Entrar / Cadastrar</a>
+        </nav>
+    </header>
 
-    
+    <main class="container conteudo">
+        <section class="banner">
+            <div>
+                <h1 id="perfil-nome">Meu Perfil</h1>
+                <p id="perfil-email">Carregando dados...</p>
+                <p id="perfil-endereco" class="mt-10"></p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="grid-3">
+                <div class="card-estatistica">
+                    <span class="valor" id="stat-total-pedidos">0</span>
+                    <span>Pedidos Realizados</span>
+                </div>
+                <div class="card-estatistica">
+                    <span class="valor" id="stat-total-gasto">R$ 0,00</span>
+                    <span>Total Gasto</span>
+                </div>
+                <div class="card-estatistica">
+                    <span class="valor" id="stat-total-favoritos">0</span>
+                    <span>Restaurantes Favoritos</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="secao-titulo">
+                <h2>Restaurantes Favoritos</h2>
+            </div>
+            <div class="lista-restaurantes" id="perfil-lista-favoritos"></div>
+        </section>
+
+        <section class="secao">
+            <div class="secao-titulo">
+                <h2>Histórico de Pedidos</h2>
+            </div>
+            <div id="perfil-lista-pedidos"></div>
+        </section>
+    </main>
+
     <script src="app.js"></script>
 </body>
 </html>

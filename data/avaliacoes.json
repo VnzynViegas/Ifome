@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": 1795747348706,
+    "restauranteId": 1795746009745,
+    "usuarioId": 1795746651859,
+    "usuarioNome": "Vinicius Oliveira",
+    "nota": 5,
+    "comentario": "muito bom ",
+    "data": "26/11/2026"
+  }
+]
