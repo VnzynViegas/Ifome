@@ -1,0 +1,25 @@
+{
+  "name": "ifome",
+  "version": "1.0.0",
+  "description": "Um site baseado na Ifood, com cadastro, crud, carrinho, historico",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VnzynViegas/Ifome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VnzynViegas/Ifome/issues"
+  },
+  "homepage": "https://github.com/VnzynViegas/Ifome#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

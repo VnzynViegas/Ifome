@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFome - Cardápio do Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">i<span>Fome</span></a>
+        <nav id="menu-navegacao">
+            <a href="index.html">Início</a>
+            <a href="admin.html">Gerenciar (CRUD)</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="login.html" id="link-usuario">Entrar / Cadastrar</a>
+        </nav>
+    </header>
+
+    <main class="container conteudo">
+        <div id="mensagem-pedido" class="alerta oculto"></div>
+
+        <section class="banner" id="info-restaurante">
+            <div>
+                <div class="flex gap-10 mb-20" style="align-items: center; margin-bottom: 10px;">
+                    <span class="badge" id="rest-detalhe-categoria" style="background: #fff; color: #ea1d2c;">Categoria</span>
+                    <button type="button" class="btn btn-cinza" id="btn-favoritar-restaurante">♡ Favoritar</button>
+                </div>
+                <h1 id="rest-detalhe-nome">Carregando restaurante...</h1>
+                <p id="rest-detalhe-descricao"></p>
+                <div class="flex gap-20 mt-10">
+                    <span id="rest-detalhe-avaliacao">★ 5.0</span>
+                    <span id="rest-detalhe-tempo">30-45 min</span>
+                    <span id="rest-detalhe-taxa">Entrega Grátis</span>
+                </div>
+            </div>
+            <img id="rest-detalhe-imagem" src="" alt="Restaurante" style="border-radius: 14px; object-fit: cover;">
+        </section>
+
+        <section class="secao">
+            <div class="secao-titulo">
+                <h2>Cardápio</h2>
+            </div>
+            <div class="lista-pratos" id="lista-pratos-restaurante"></div>
+        </section>
+
+        <section class="secao" id="secao-carrinho">
+            <div class="carrinho">
+                <div class="secao-titulo">
+                    <h2>Seu Carrinho</h2>
+                    <button type="button" class="btn btn-cinza" id="btn-limpar-carrinho">Limpar</button>
+                </div>
+
+                <div id="itens-carrinho"></div>
+
+                <div class="total-carrinho">
+                    <span>Total do Pedido:</span>
+                    <strong id="valor-total-carrinho">R$ 0,00</strong>
+                </div>
+
+                <button type="button" class="btn btn-vermelho w-100" id="btn-finalizar-pedido">
+                    Finalizar Pedido
+                </button>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="secao-titulo">
+                <h2>Avaliações dos Clientes</h2>
+            </div>
+
+            <form class="formulario" id="form-avaliacao">
+                <h3>Deixe sua avaliação</h3>
+                <div class="grid-2">
+                    <div class="campo">
+                        <label for="avaliacao-nota">Nota (1 a 5 estrelas)</label>
+                        <select id="avaliacao-nota" required>
+                            <option value="5">★★★★★ (5 - Excelente)</option>
+                            <option value="4">★★★★☆ (4 - Muito bom)</option>
+                            <option value="3">★★★☆☆ (3 - Regular)</option>
+                            <option value="2">★★☆☆☆ (2 - Ruim)</option>
+                            <option value="1">★☆☆☆☆ (1 - Péssimo)</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="avaliacao-comentario">Comentário</label>
+                        <input type="text" id="avaliacao-comentario" placeholder="O que achou da comida e entrega?" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-vermelho">Enviar Avaliação</button>
+            </form>
+
+            <div class="mt-20" id="lista-avaliacoes"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

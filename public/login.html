@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFome - Entrar ou Cadastrar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">i<span>Fome</span></a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="admin.html">Gerenciar (CRUD)</a>
+            <a href="login.html" class="ativo">Conta</a>
+        </nav>
+    </header>
+
+    <main class="container conteudo">
+        <div id="mensagem-auth" class="alerta oculto" style="max-width: 500px; margin: 0 auto 15px;"></div>
+
+        <!-- formulario login -->
+        <form class="formulario" id="form-login">
+            <h2>Entrar no iFome</h2>
+            <p>Acesse sua conta para fazer pedidos</p>
+
+            <div class="campo">
+                <label for="login-email">E-mail</label>
+                <input type="email" id="login-email" placeholder="seuemail@exemplo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="login-senha">Senha</label>
+                <input type="password" id="login-senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit" class="btn btn-vermelho">Entrar</button>
+            <a href="#form-cadastro" class="link" id="btn-mostrar-cadastro">Não tem conta? Cadastre-se aqui</a>
+        </form>
+
+        <!-- formulario cadastro -->
+        <form class="formulario oculto" id="form-cadastro">
+            <h2>Criar Conta</h2>
+            <p>Preencha seus dados para começar</p>
+
+            <div class="campo">
+                <label for="cad-nome">Nome Completo</label>
+                <input type="text" id="cad-nome" placeholder="Ex: João Silva" required>
+            </div>
+
+            <div class="campo">
+                <label for="cad-email">E-mail</label>
+                <input type="email" id="cad-email" placeholder="seuemail@exemplo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="cad-endereco">Endereço de Entrega</label>
+                <input type="text" id="cad-endereco" placeholder="Rua, número e bairro">
+            </div>
+
+            <div class="campo">
+                <label for="cad-senha">Senha</label>
+                <input type="password" id="cad-senha" placeholder="Crie uma senha" required>
+            </div>
+
+            <button type="submit" class="btn btn-vermelho">Finalizar Cadastro</button>
+            <a href="#form-login" class="link" id="btn-mostrar-login">Já tenho conta! Fazer login</a>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

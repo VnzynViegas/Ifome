@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1795746829670,
+    "usuarioId": 1795746651859,
+    "itens": [
+      {
+        "id": 1795746734921,
+        "restauranteId": 1795746691902,
+        "nome": "pizza",
+        "preco": 5,
+        "imagem": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+        "quantidade": 2
+      }
+    ],
+    "total": 10,
+    "status": "Entregue",
+    "data": "26/11/2026, 23:33:49"
+  }
+]
