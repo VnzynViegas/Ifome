@@ -32,5 +32,55 @@
     "total": 89.98,
     "status": "Entregue",
     "data": "27/11/2026, 11:20:00"
+  },
+  {
+    "id": 1795870608818,
+    "usuarioId": 1795789131935,
+    "itens": [
+      {
+        "id": 1795869450726,
+        "restauranteId": 1795746021074,
+        "nome": "Pizza Pequena 2 Sabores",
+        "preco": 29.99,
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVoSV2MnJmpUKNCFdxLTpNXkafWB4glBMos1tY-F3PPuuMBnlc1qCgiro&s=10",
+        "quantidade": 1
+      },
+      {
+        "id": 1795746734921,
+        "restauranteId": 1795746691902,
+        "nome": "pizza",
+        "preco": 5,
+        "imagem": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600",
+        "quantidade": 1
+      }
+    ],
+    "total": 34.989999999999995,
+    "status": "Entregue",
+    "data": "28/11/2026, 09:56:48"
+  },
+  {
+    "id": 1795873124587,
+    "usuarioId": 1795789131935,
+    "itens": [
+      {
+        "id": 1795872743675,
+        "restauranteId": 1795746009745,
+        "nome": "x-burger",
+        "preco": 15,
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVTWG4V3HqUBi9qP8mfJXoTBr5U2FUk-wRYSa1XRwC3k8kku0c06dlYHM&s=10",
+        "quantidade": 1
+      },
+      {
+        "id": 1795869450726,
+        "restauranteId": 1795746021074,
+        "nome": "Pizza Pequena 2 Sabores",
+        "preco": 29.99,
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVoSV2MnJmpUKNCFdxLTpNXkafWB4glBMos1tY-F3PPuuMBnlc1qCgiro&s=10",
+        "quantidade": 1
+      }
+    ],
+    "total": 44.989999999999995,
+    "status": "Entregue",
+    "data": "28/11/2026, 10:38:44"
   }
 ]

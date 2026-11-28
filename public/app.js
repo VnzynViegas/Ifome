@@ -442,7 +442,7 @@ async function iniciarPaginaRestaurante() {
     document.getElementById("form-avaliacao").onsubmit = async (e) => {
         e.preventDefault();
         const usuario = obterUsuarioLogado();
-        if (carrinho.length > 0 && carrinho.restauranteId !== prato.restauranteId) {
+        if (carrinho.length > 0 && carrinho.restauranteId !== Number(prato.restauranteId)) {
             if (!confirm("Limpar carrinho do outro restaurante antes de adicionar este prato?")) return;
             carrinho.length = 0;
         }
@@ -539,6 +539,13 @@ function adicionarAoCarrinho(pratoId) {
     if (!prato) return;
 
     const carrinho = obterCarrinho();
+
+    if (carrinho.length > 0 && Number(carrinho[0].restauranteId) !== Number(prato.restauranteId)) {
+    const trocar = confirm("Seu carrinho já tem itens de outro restaurante. Deseja limpar o carrinho atual para adicionar este prato?");
+    if (!trocar) return;
+    carrinho.length = 0;
+    }
+
     const itemExistente = carrinho.find(item => item.id === pratoId);
 
     if (itemExistente) {
