@@ -6,13 +6,5 @@
     "descricao": "",
     "preco": 5,
     "imagem": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
-  },
-  {
-    "id": 1795802563378,
-    "restauranteId": 1795802511516,
-    "nome": "Aborgue",
-    "descricao": "O que  Todos querem do mecdonauld? Aborgue!",
-    "preco": 15.67,
-    "imagem": "https://images7.memedroid.com/images/UPLOADED688/673547bb202c1.jpeg"
   }
 ]
